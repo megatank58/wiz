@@ -17,7 +17,7 @@ fn main() {
           .about("Url to be opened on Wiz. http:// protocol can be ommited.")
           .index(1))
       .get_matches();
-    let mut url:String = "https://github.com/kimlimjustin/wiz".to_string();
+    let mut url:String = "https://discord.com/app".to_string();
     if let Some(i) = matches.value_of("url") {
       url = if i.starts_with("http://") || i.starts_with("https://") {
         i.to_string()
